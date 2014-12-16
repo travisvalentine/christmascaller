@@ -1,0 +1,73 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/blah.js"></script>
+<script src="/semantic.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="/custom.css">
+
+<div class="wrapper">
+  <div class="ui menu"></div>
+  <div class="ui grid main">
+    <div class="four wide column"></div>
+    <div class="eight wide column">
+      <div class="center">
+        <h1 class="ui header">Let someone know their gifts are being made.</h1>
+        <p>Tkljdlskajfklsj</p>
+      </div>
+      <div class="ui divider"></div>
+      <form action="/send" method="post">
+        <div class="ui stackable grid form">
+          <div class="six wide column">
+            <div class="ui basic compact segment">
+              <i class="massive gift icon"></i>
+            </div>
+
+            <div class="inline fields">
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="message[type]" value="gift" checked>
+                  <label>Gift</label>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="message[type]" value="coal">
+                  <label>Coal</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ten wide column">
+            <div class="ui form segment">
+              <div class="inline field">
+                <label>Recipient Name:</label>
+                <div class="ui fluid input">
+                  <input type="text" name="message[to_name]" placeholder="name">
+                </div>
+              </div>
+
+              <div class="inline field">
+                <label>Recipient Phone:</label>
+                <div class="ui fluid input">
+                  <input type="tel" name="message[from_name]" placeholder="phone number">
+                </div>
+              </div>
+
+              <input type="submit" class="large ui fluid green button">
+            </div>
+          </div>
+        </div>
+        <div class="sixteen wide column">
+          <div class="ui message preview">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="four wide column"></div>
+  </div>
+  <div class="footer red">
+    <div class="sixteen wide column">
+      <p>Made by <a href="https://twitter.com/travisvalentine">Travis Valentine</a></p>
+    </div>
+  </div>
+</div>
